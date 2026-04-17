@@ -62,7 +62,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className={styles.contactItem}>
+            <a href="tel:+380960412721" className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path
@@ -74,9 +74,9 @@ export default function Contact() {
               </div>
               <div>
                 <span className={styles.contactLabel}>Телефон</span>
-                <span className={styles.contactValue}>Уточнюйте по email</span>
+                <span className={styles.contactValue}>+380960412721</span>
               </div>
-            </div>
+            </a>
 
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
