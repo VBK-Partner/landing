@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 const NAV_LINKS = [
   { label: "Про нас", href: "#about" },
-  { label: "Послуги", href: "#services" },
+  { label: "Продукція", href: "#services" },
   { label: "Проєкти", href: "#projects" },
   { label: "Переваги", href: "#advantages" },
   { label: "Контакти", href: "#contact" },
@@ -40,7 +40,7 @@ export default function Header() {
           </div>
           <div className={styles.logoText}>
             <span className={styles.logoMain}>ВБК Партнер</span>
-            <span className={styles.logoSub}>Будівельна компанія</span>
+            <span className={styles.logoSub}>Пиломатеріали та будівництво</span>
           </div>
         </a>
 

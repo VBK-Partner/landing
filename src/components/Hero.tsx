@@ -16,18 +16,19 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Понад 10 років досвіду
+          Виробництво та будівництво
         </div>
 
         <h1 className={styles.title}>
-          Будуємо майбутнє <br />
-          <span className={styles.accent}>разом з вами</span>
+          Пиломатеріали <br />
+          <span className={styles.accent}>від виробника</span>
         </h1>
 
         <p className={styles.subtitle}>
-          ТОВ «Виробничо-будівельна компанія «Партнер» — ваш надійний партнер у
-          будівництві, реконструкції та капітальному ремонті об'єктів будь-якої
-          складності в Києві та по всій Україні.
+          ТОВ «Виробничо-будівельна компанія «Партнер» — виробник якісних
+          пиломатеріалів та надійний партнер у будівництві. Брус, дошка, вагонка
+          та інші пиломатеріали напряму від виробника за чесною ціною з
+          доставкою по Києву та всій Україні.
         </p>
 
         <div className={styles.actions}>
@@ -35,13 +36,13 @@ export default function Hero() {
             className={styles.btnPrimary}
             onClick={() => scrollTo("#contact")}
           >
-            Отримати консультацію
+            Замовити пиломатеріали
           </button>
           <button
             className={styles.btnSecondary}
             onClick={() => scrollTo("#services")}
           >
-            Наші послуги
+            Каталог продукції
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path
                 d="M4 10h12M11 5l5 5-5 5"
@@ -57,13 +58,6 @@ export default function Hero() {
         <div className={styles.stats}>
           <div className={styles.stat}>
             <span className={styles.statNum}>
-              200<span className={styles.statPlus}>+</span>
-            </span>
-            <span className={styles.statLabel}>Завершених об'єктів</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>
               10<span className={styles.statPlus}>+</span>
             </span>
             <span className={styles.statLabel}>Років на ринку</span>
@@ -71,16 +65,23 @@ export default function Hero() {
           <div className={styles.statDivider} />
           <div className={styles.stat}>
             <span className={styles.statNum}>
-              50<span className={styles.statPlus}>+</span>
+              1000<span className={styles.statPlus}>+</span>
             </span>
-            <span className={styles.statLabel}>Фахівців у команді</span>
+            <span className={styles.statLabel}>м³ пиломатеріалів на рік</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.stat}>
+            <span className={styles.statNum}>
+              200<span className={styles.statPlus}>+</span>
+            </span>
+            <span className={styles.statLabel}>Задоволених клієнтів</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>
             <span className={styles.statNum}>
               100<span className={styles.statPlus}>%</span>
             </span>
-            <span className={styles.statLabel}>Задоволених клієнтів</span>
+            <span className={styles.statLabel}>Якість продукції</span>
           </div>
         </div>
       </div>

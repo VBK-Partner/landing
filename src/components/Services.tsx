@@ -4,6 +4,115 @@ const SERVICES = [
   {
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <rect
+          x="6"
+          y="8"
+          width="28"
+          height="24"
+          rx="2"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        />
+        <path
+          d="M6 16h28M6 24h28M14 8v24M26 8v24"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+    title: "Брус обрізний та строганий",
+    desc: "Брус різних розмірів: 200×200, 150×150, 100×100, 50×50, 40×40 мм. Свіжопил та сухий строганий брус від виробника.",
+    features: [
+      "Брус свіжопил",
+      "Брус сухий строганий",
+      "Імітація бруса",
+      "Усі розміри в наявності",
+    ],
+  },
+  {
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path
+          d="M6 12h28v4H6zM6 20h28v4H6zM6 28h28v4H6z"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    title: "Дошка обрізна та строганна",
+    desc: "Дошка свіжопил та суха строганна всіх розмірів. Використовується для підлоги, обшивки стін, обрешітки та будівельних робіт.",
+    features: [
+      "Дошка свіжопил",
+      "Дошка суха строганна",
+      "Дошка обрізна",
+      "Усі розміри",
+    ],
+  },
+  {
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path
+          d="M8 32V10a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v22"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+        <path
+          d="M12 14h16M12 20h16M12 26h16"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+        <path
+          d="M6 32h28"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+    title: "Вагонка та оздоблювальні матеріали",
+    desc: "Вагонка сосна відповідає європейським стандартам. Надійне пазо-коньковое кріплення, якісна обробка та точна геометрія.",
+    features: [
+      "Вагонка сосна",
+      "Терасна дошка",
+      "Дошка для підлоги",
+      "Імітація бруса",
+    ],
+  },
+  {
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <circle
+          cx="20"
+          cy="20"
+          r="14"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        />
+        <path
+          d="M20 10v10l6 4"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    title: "Сухостій та спеціальні матеріали",
+    desc: "Сухостій усіх розмірів у наявності. Також пропонуємо фанеру, плити OSB, кирпич та інші будівельні матеріали.",
+    features: [
+      "Сухостій",
+      "Фанера ламінована",
+      "Плити OSB",
+      "Кирпич будівельний",
+    ],
+  },
+  {
+    icon: (
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path
           d="M6 32V16l14-8 14 8v16H26V22H14v10H6Z"
           stroke="currentColor"
@@ -18,47 +127,13 @@ const SERVICES = [
         />
       </svg>
     ),
-    title: "Нове будівництво",
-    desc: "Зведення будівель і споруд будь-якого типу та призначення «під ключ» з нуля — від фундаменту до здачі в експлуатацію.",
+    title: "Будівництво та реконструкція",
+    desc: "Зведення будівель будь-якого типу «під ключ», реконструкція та капітальний ремонт промислових, комерційних та житлових об'єктів.",
     features: [
-      "Житлові будинки",
-      "Комерційні об'єкти",
-      "Промислові споруди",
-      "Адміністративні будівлі",
-    ],
-  },
-  {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <rect
-          x="6"
-          y="20"
-          width="28"
-          height="14"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M10 20V12a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M6 26h28M14 26v8M26 26v8"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-    title: "Реконструкція",
-    desc: "Повне або часткове оновлення будівель зі зміною конструктивних рішень, перепланування та технічного переоснащення.",
-    features: [
-      "Перепланування",
-      "Зміцнення конструкцій",
-      "Модернізація фасадів",
-      "Розширення площ",
+      "Нове будівництво",
+      "Реконструкція",
+      "Капітальний ремонт",
+      "Монтаж конструкцій",
     ],
   },
   {
@@ -71,118 +146,21 @@ const SERVICES = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <circle cx="20" cy="22" r="3" stroke="currentColor" strokeWidth="1.8" />
         <path
-          d="M14 32v-4h4v4M22 32v-4h4v4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-    title: "Капітальний ремонт",
-    desc: "Комплексний ремонт з повною заміною або відновленням зношених конструктивних елементів та інженерних систем.",
-    features: [
-      "Покрівельні роботи",
-      "Інженерні мережі",
-      "Фасадні роботи",
-      "Оздоблення приміщень",
-    ],
-  },
-  {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <path
-          d="M34 20a14 14 0 1 1-28 0 14 14 0 0 1 28 0Z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M20 12v8l5 3"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M8 8l4 4M32 8l-4 4"
+          d="M16 24h8M16 28h8"
           stroke="currentColor"
           strokeWidth="1.8"
           strokeLinecap="round"
         />
       </svg>
     ),
-    title: "Будівельний контроль",
-    desc: "Технічний нагляд і незалежний контроль якості будівельних робіт на вашому об'єкті від сторонніх підрядників.",
+    title: "Покрівельні роботи",
+    desc: "Виконуємо покрівельні роботи будь-якої складності. Постачаємо бітумну черепицю та металочерепицю різних кольорів.",
     features: [
-      "Технічний нагляд",
-      "Перевірка матеріалів",
-      "Контроль технологій",
-      "Здача об'єкту",
-    ],
-  },
-  {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <path
-          d="M10 28L6 34h28l-4-6M14 22l-4 6M26 22l4 6M20 8v14"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <circle cx="20" cy="7" r="3" stroke="currentColor" strokeWidth="1.8" />
-        <path
-          d="M12 22h16"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-    title: "Монтаж конструкцій",
-    desc: "Монтаж металевих, залізобетонних та дерев'яних несучих і огороджувальних конструкцій будь-якої складності.",
-    features: [
-      "Металоконструкції",
-      "Залізобетон",
-      "Ферми і перекриття",
-      "Зварювальні роботи",
-    ],
-  },
-  {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <rect
-          x="6"
-          y="6"
-          width="28"
-          height="28"
-          rx="3"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M6 14h28M14 6v28"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-        <path
-          d="M22 20h6M22 25h4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-        <circle cx="11" cy="22" r="2" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-    title: "Проєктування",
-    desc: "Розробка проєктно-кошторисної документації, архітектурних та конструктивних рішень для об'єктів будівництва.",
-    features: [
-      "Архітектурні рішення",
-      "Конструктивні схеми",
-      "Кошторисна документація",
-      "Узгодження проєктів",
+      "Бітумна черепиця",
+      "Металочерепиця",
+      "Монтаж покрівлі",
+      "Ремонт даху",
     ],
   },
 ];
@@ -192,11 +170,11 @@ export default function Services() {
     <section className={styles.services} id="services">
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.label}>Що ми робимо</div>
-          <h2 className={styles.title}>Наші послуги</h2>
+          <div className={styles.label}>Продукція та послуги</div>
+          <h2 className={styles.title}>Каталог продукції та послуг</h2>
           <p className={styles.subtitle}>
-            Повний спектр будівельних та проєктних послуг для реалізації вашого
-            проєкту будь-якої складності
+            Пиломатеріали від виробника, будівельні матеріали та повний спектр
+            будівельних послуг для реалізації вашого проєкту
           </p>
         </div>
 

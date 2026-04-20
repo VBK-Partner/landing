@@ -31,8 +31,9 @@ export default function Contact() {
           <div className={styles.label}>Зворотній зв'язок</div>
           <h2 className={styles.title}>Зв'яжіться з нами</h2>
           <p className={styles.desc}>
-            Готові обговорити ваш проєкт? Заповніть форму або зв'яжіться з нами
-            зручним для вас способом. Відповідаємо протягом одного робочого дня.
+            Готові замовити пиломатеріали або обговорити будівельний проєкт?
+            Заповніть форму або зв'яжіться з нами зручним для вас способом.
+            Відповідаємо протягом одного робочого дня.
           </p>
 
           <div className={styles.contacts}>
@@ -62,7 +63,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href="tel:+380960412721" className={styles.contactItem}>
+            {/* <a href="tel:+380960412721" className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path
@@ -76,7 +77,7 @@ export default function Contact() {
                 <span className={styles.contactLabel}>Телефон</span>
                 <span className={styles.contactValue}>+380960412721</span>
               </div>
-            </a>
+            </a> */}
 
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
