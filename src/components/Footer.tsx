@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 const LINKS = [
   { label: "Про нас", href: "#about" },
-  { label: "Послуги", href: "#services" },
+  { label: "Продукція", href: "#services" },
   { label: "Проєкти", href: "#projects" },
   { label: "Переваги", href: "#advantages" },
   { label: "Контакти", href: "#contact" },
@@ -24,12 +24,14 @@ export default function Footer() {
               </svg>
               <div>
                 <span className={styles.logoMain}>ВБК Партнер</span>
-                <span className={styles.logoSub}>Будівельна компанія</span>
+                <span className={styles.logoSub}>
+                  Пиломатеріали та будівництво
+                </span>
               </div>
             </div>
             <p className={styles.brandDesc}>
-              ТОВ «Виробничо-будівельна компанія «Партнер» — надійний партнер у
-              сфері будівництва та реконструкції в Україні.
+              ТОВ «Виробничо-будівельна компанія «Партнер» — виробник якісних
+              пиломатеріалів та надійний партнер у сфері будівництва в Україні.
             </p>
           </div>
 
