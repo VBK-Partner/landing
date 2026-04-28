@@ -50,11 +50,12 @@
 .card {
     background: var(--white);
     border-radius: var(--radius-lg);
-    padding: 32px;
     border: 1px solid var(--border);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card::before {
@@ -80,17 +81,57 @@
     transform: scaleX(1);
 }
 
+.cardImageWrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.card:hover .cardImg {
+    transform: scale(1.07);
+}
+
+.cardImgOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            transparent 40%,
+            rgba(10, 25, 50, 0.45) 100%);
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .cardImgOverlay {
+    opacity: 0.7;
+}
+
+.cardBody {
+    padding: 28px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .cardIcon {
-    width: 68px;
-    height: 68px;
+    width: 56px;
+    height: 56px;
     background: rgba(26, 58, 107, 0.06);
-    border-radius: 16px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     transition: var(--transition);
+    flex-shrink: 0;
 }
 
 .card:hover .cardIcon {

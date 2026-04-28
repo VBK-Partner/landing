@@ -2,6 +2,8 @@ import styles from "./Services.module.css";
 
 const SERVICES = [
   {
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <rect
@@ -31,6 +33,8 @@ const SERVICES = [
     ],
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path
@@ -51,6 +55,8 @@ const SERVICES = [
     ],
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path
@@ -83,6 +89,8 @@ const SERVICES = [
     ],
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <circle
@@ -111,6 +119,8 @@ const SERVICES = [
     ],
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path
@@ -137,6 +147,8 @@ const SERVICES = [
     ],
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=260&fit=crop&q=80",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path
@@ -181,17 +193,28 @@ export default function Services() {
         <div className={styles.grid}>
           {SERVICES.map((service) => (
             <div key={service.title} className={styles.card}>
-              <div className={styles.cardIcon}>{service.icon}</div>
-              <h3 className={styles.cardTitle}>{service.title}</h3>
-              <p className={styles.cardDesc}>{service.desc}</p>
-              <ul className={styles.cardFeatures}>
-                {service.features.map((f) => (
-                  <li key={f} className={styles.cardFeature}>
-                    <span className={styles.featureDot} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.cardImageWrap}>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className={styles.cardImg}
+                  loading="lazy"
+                />
+                <div className={styles.cardImgOverlay} />
+              </div>
+              <div className={styles.cardBody}>
+                <div className={styles.cardIcon}>{service.icon}</div>
+                <h3 className={styles.cardTitle}>{service.title}</h3>
+                <p className={styles.cardDesc}>{service.desc}</p>
+                <ul className={styles.cardFeatures}>
+                  {service.features.map((f) => (
+                    <li key={f} className={styles.cardFeature}>
+                      <span className={styles.featureDot} />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
